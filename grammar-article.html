@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js">
+	<head>
+		<title>Hamburger menu with a11y</title>
+		<meta charset="utf/8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
+		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="grammar-article.css">
+		<script type="module">
+			document.documentElement.classList.remove('no-js');
+			document.documentElement.classList.add('js');
+		</script>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav id="real-nav">
+				<button class="nav-link" id="back">back</button>
+				<h1 class="nav-header">Burgers!</h1>
+				<p class="nav-link nav-link-active"><a href="google.com">something</a></p>
+				<p class="nav-link"><a href="google.com">something</a></p>
+				<p class="nav-link"><a href="google.com">something</a></p>
+				<p class="nav-link"><a href="google.com">something</a></p>
+				<p id="language-sel"><strong>username</strong> (English)</p>
+			</nav>
+
+			<nav id="mobile-header">
+				<button id="menu-trigger" aria-label="Open menu">&#9776;</button>
+				<h1>Burgers!</h1>
+			</nav>
+
+			<div id="cover"></div>
+		</header>
+		
+		<main>
+			<p>This is some stuff in the main to demonstrate alignment</p>
+			
+		</main>
+	</body>
+</html>
